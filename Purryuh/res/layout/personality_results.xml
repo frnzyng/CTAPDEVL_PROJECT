@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalityTest.Personality_ResultsActivity">
+
+    <ImageView
+        android:id="@+id/bgpic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/personality_result_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/resultPic"
+        android:layout_width="410dp"
+        android:layout_height="776dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/personality_result_chillthrill"
+        app:layout_constraintBottom_toBottomOf="@+id/bgpic"
+        app:layout_constraintEnd_toEndOf="@+id/bgpic"
+        app:layout_constraintStart_toStartOf="@+id/bgpic"
+        app:layout_constraintTop_toTopOf="@+id/bgpic" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="322dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/resultPic"
+        app:layout_constraintEnd_toEndOf="@+id/resultPic"
+        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintStart_toStartOf="@+id/resultPic"
+        app:layout_constraintTop_toTopOf="@+id/resultPic"
+        app:layout_constraintVertical_bias="0.101">
+
+        <TextView
+            android:id="@+id/usernameResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pangalan"
+            android:textAlignment="center"
+            android:textColor="#323030"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/homebutton"
+        android:layout_width="130dp"
+        android:layout_height="56dp"
+        android:src="@drawable/personality_homebutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultPic"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/tomenu"
+        android:layout_width="101dp"
+        android:layout_height="48dp"
+        android:alpha="0"
+        android:text="home"
+        app:layout_constraintBottom_toBottomOf="@+id/homebutton"
+        app:layout_constraintEnd_toEndOf="@+id/homebutton"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/homebutton"
+        app:layout_constraintTop_toTopOf="@+id/homebutton"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <ImageView
+        android:id="@+id/retake"
+        android:layout_width="116dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/homebutton"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultPic"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/personality_retakebutton" />
+
+    <Button
+        android:id="@+id/retakebtn"
+        android:layout_width="101dp"
+        android:layout_height="47dp"
+        android:text="Button"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="@+id/retake"
+        app:layout_constraintEnd_toEndOf="@+id/retake"
+        app:layout_constraintStart_toStartOf="@+id/retake"
+        app:layout_constraintTop_toTopOf="@+id/retake"
+        app:layout_constraintVertical_bias="0.13" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

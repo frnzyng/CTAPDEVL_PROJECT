@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/bgquestions9to16"
+            android:layout_width="wrap_content"
+            android:layout_height="4890dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/q9to16" />
+
+        <ImageView
+            android:id="@+id/volume"
+            android:layout_width="67dp"
+            android:layout_height="93dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.953"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/volume" />
+
+        <Button
+            android:id="@+id/musicbtn"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:alpha="0"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="@+id/volume"
+            app:layout_constraintEnd_toEndOf="@+id/volume"
+            app:layout_constraintStart_toStartOf="@+id/volume"
+            app:layout_constraintTop_toTopOf="@+id/volume" />
+
+
+        <Button
+            android:id="@+id/Qbackbtn"
+            android:layout_width="132dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="4dp"
+            android:alpha="0"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="back"
+            app:layout_constraintBottom_toBottomOf="@+id/questionsback"
+            app:layout_constraintStart_toStartOf="@+id/questionsback" />
+
+        <Button
+            android:id="@+id/doneBtn"
+            android:layout_width="139dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="188dp"
+            android:text="done"
+            android:alpha="0"
+            app:layout_constraintBottom_toTopOf="@+id/questionsback"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/q16choices"
+            app:layout_constraintVertical_bias="0.357" />
+
+        <ImageView
+            android:id="@+id/questionsback"
+            android:layout_width="142dp"
+            android:layout_height="47dp"
+            android:layout_marginBottom="64dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/doneBtn"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="@+id/doneBtn"
+            app:srcCompat="@drawable/backbtn" />
+
+        <RadioGroup
+            android:id="@+id/q9choices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="328dp"
+            android:background="#99171717"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/bgquestions9to16"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/bgquestions9to16"
+            app:layout_constraintTop_toTopOf="@+id/bgquestions9to16">
+
+            <RadioButton
+                android:id="@+id/q9a1"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/mukta"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Iisipin ‘yong mga games na lalaruin"
+                android:textColor="@drawable/radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/q9a2"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/mukta"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="No thoughts, head empty. Tatayo lang sa pila"
+                android:textColor="@drawable/radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/q9a3"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/mukta"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Ilabas ang mainit na baon na chika"
+                android:textColor="@drawable/radio_text_color" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/q10choices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="384dp"
+            android:background="#99171717"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/bgquestions9to16"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/bgquestions9to16"
+            app:layout_constraintTop_toBottomOf="@+id/q9choices">
+
+            <RadioButton
+                android:id="@+id/q10a1"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/mukta"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Go Big or Go Home. Siyempre sa rides at games!"
+                android:textColor="@drawable/radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/q10a2"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/mukta"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="idk"
+                android:textColor="@drawable/radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/q10a3"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/mukta"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Foods!"
+                android:textColor="@drawable/radio_text_color" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/q11choices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="388dp"
+            android:background="#99171717"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/bgquestions9to16"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/bgquestions9to16"
+            app:layout_constraintTop_toBottomOf="@+id/q10choices">
+
+            <RadioButton
+                android:id="@+id/q11a1"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/mukta"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Malulumbay kasi hindi malalaro lahat ng gustong games"
+                android:textColor="@drawable/radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/q11a2"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/mukta"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Pass muna ako sa rides, games, at foods"
+                android:textColor="@drawable/radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/q11a3"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/mukta"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Malulungkot"
+                android:textColor="@drawable/radio_text_color" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/q12choices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="384dp"
+            android:background="#99171717"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/bgquestions9to16"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/bgquestions9to16"
+            app:layout_constraintTop_toBottomOf="@+id/q11choices">
+
+            <RadioButton
+                android:id="@+id/q12a1"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/mukta"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Sorry, sira excitement scale ko so 100/10"
+                android:textColor="@drawable/radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/q12a2"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/mukta"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="7.375"
+                android:textColor="@drawable/radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/q12a3"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/mukta"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Of course 10/10"
+                android:textColor="@drawable/radio_text_color" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/q13choices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="384dp"
+            android:background="#99171717"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/bgquestions9to16"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/bgquestions9to16"
+            app:layout_constraintTop_toBottomOf="@+id/q12choices">
+
+            <RadioButton
+                android:id="@+id/q13a1"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/mukta"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="COLOR GAME!!!!!!"
+                android:textColor="@drawable/radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/q13a2"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/mukta"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Wala"
+                android:textColor="@drawable/radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/q13a3"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/mukta"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Happy Place"
+                android:textColor="@drawable/radio_text_color" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/q14choices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="388dp"
+            android:background="#99171717"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/bgquestions9to16"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/bgquestions9to16"
+            app:layout_constraintTop_toBottomOf="@+id/q13choices">
+
+            <RadioButton
+                android:id="@+id/q14a1"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/mukta"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Laruin lahat ng games, sakyan lahat ng rides, kainin lahat ng foods"
+                android:textColor="@drawable/radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/q14a2"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/mukta"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Double it and give it to the next person"
+                android:textColor="@drawable/radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/q14a3"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/mukta"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="I’ll enjoy the company of my friends"
+                android:textColor="@drawable/radio_text_color" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/q15choices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="388dp"
+            android:background="#99171717"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/bgquestions9to16"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/bgquestions9to16"
+            app:layout_constraintTop_toBottomOf="@+id/q14choices">
+
+            <RadioButton
+                android:id="@+id/q15a1"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/mukta"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Kahit anong oras pa ‘yan, pupunta ako"
+                android:textColor="@drawable/radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/q15a2"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/mukta"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Can’t decide"
+                android:textColor="@drawable/radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/q15a3"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/mukta"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="In the afternoon para maabutan‘yong sunset"
+                android:textColor="@drawable/radio_text_color" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/q16choices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="384dp"
+            android:background="#99171717"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/bgquestions9to16"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/bgquestions9to16"
+            app:layout_constraintTop_toBottomOf="@+id/q15choices">
+
+            <RadioButton
+                android:id="@+id/q16a1"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/mukta"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Wait lang! Teka… Isang game nalang, promise!"
+                android:textColor="@drawable/radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/q16a2"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/mukta"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Matulog"
+                android:textColor="@drawable/radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/q16a3"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/mukta"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="I-tag ang friends sa IG stories"
+                android:textColor="@drawable/radio_text_color" />
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

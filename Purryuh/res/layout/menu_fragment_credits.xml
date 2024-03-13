@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6E0406"
+    tools:context=".CreditsFragment"
+    >
+
+    <!-- ScrollView -->
+
+    <!-- BottomNavigationView -->
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="396dp"
+        android:layout_height="631dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <!-- Nested LinearLayout for Horizontal Orientation -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- First ImageView -->
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:padding="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/darrel" />
+
+                <!-- Second ImageView -->
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:padding="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/franze" />
+            </LinearLayout>
+
+            <!-- Third LinearLayout for Horizontal Orientation (for Jonathan images) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Third ImageView (Jonathan) -->
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:padding="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/jonathan" />
+
+                <!-- Fourth ImageView (Jonathan) -->
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:padding="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/jarl" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Third ImageView (Jonathan) -->
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:padding="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/emlan" />
+
+                <!-- Fourth ImageView (Jonathan) -->
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:padding="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/jas" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <!-- Third ImageView (Jonathan) -->
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:padding="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/thea" />
+
+                <!-- Fourth ImageView (Jonathan) -->
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:padding="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bianca" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="198dp"
+                    android:layout_height="200dp"
+
+                    android:adjustViewBounds="true"
+                    android:padding="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/celine" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/creds"
+        android:layout_width="425dp"
+        android:layout_height="504dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/credits" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="381dp"
+        android:layout_height="409dp"
+        android:layout_marginBottom="480dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.993"
+        app:srcCompat="@drawable/dev" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

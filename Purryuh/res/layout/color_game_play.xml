@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ColorGame.ColorGamePlay"
+    android:background="@drawable/peryabg"
+
+
+
+
+    >
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/sadlose"
+        android:layout_width="399dp"
+        android:layout_height="737dp"
+        android:layout_marginTop="4dp"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_rawRes="@raw/redsadanimation" />
+
+    <ImageView
+        android:id="@+id/Die4"
+        android:layout_width="93dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="212dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/yellow4" />
+
+    <ImageView
+        android:id="@+id/Die8"
+        android:layout_width="93dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="320dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/white8" />
+
+    <ImageView
+        android:id="@+id/Die3"
+        android:layout_width="93dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="320dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/green3" />
+
+    <ImageView
+        android:id="@+id/Die7"
+        android:layout_width="93dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="212dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/violet7" />
+
+    <ImageView
+        android:id="@+id/Die2"
+        android:layout_width="93dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="212dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/blue2" />
+
+    <ImageView
+        android:id="@+id/Die1"
+        android:layout_width="93dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="104dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/red1" />
+
+    <ImageView
+        android:id="@+id/Die9"
+        android:layout_width="93dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="104dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/black9" />
+
+    <ImageView
+        android:id="@+id/Die6"
+        android:layout_width="93dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="104dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pink6" />
+
+    <ImageView
+        android:id="@+id/Die5"
+        android:layout_width="93dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="320dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/orange5" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/MainDie"
+        android:layout_width="304dp"
+        android:layout_height="243dp"
+        android:clickable="true"
+        android:layout_marginTop="28dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_rawRes="@raw/dieroll"
+        android:focusable="true" />
+
+
+    <Button
+        android:id="@+id/RollButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:background="#AE3A3A"
+        android:fontFamily="@font/chewy"
+        android:shadowColor="@color/black"
+        android:text="ROLL"
+        android:textColor="#FFFFFF"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ResetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:background="#AD3A3A"
+        android:fontFamily="@font/chewy"
+        android:text="ROLL AGAIN"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ColorWinner"
+        android:layout_width="259dp"
+        android:layout_height="221dp"
+        android:layout_marginTop="64dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/white8" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/winnerView"
+        android:layout_width="252dp"
+        android:layout_height="285dp"
+        android:layout_marginTop="28dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/youwinnn" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/loseview"
+        android:layout_width="252dp"
+        android:layout_height="285dp"
+        android:layout_marginTop="28dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/tryagain" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/confetti"
+        android:layout_width="433dp"
+        android:layout_height="744dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/confetti"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/WarningCP"
+        android:layout_width="176dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/chewy"
+        android:text="PICK A COLOR!"
+        android:textColor="#FDB4BF"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/homee"
+        android:layout_width="75dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/muteB"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.988"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_lock_silent_mode" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
